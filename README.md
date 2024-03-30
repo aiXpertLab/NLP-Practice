@@ -1,3 +1,5 @@
+contribution: 
+https://carpentries-incubator.github.io/python-text-analysis/
 # NLP-Python
 Natural Language Processing Text Analysis in Python
 
@@ -13,6 +15,7 @@ There are many models for representing language. The model we chose for our task
 We can think of the various tasks NLP can do as different types of desired outputs, which may require different models depending on the task.
 
 Let’s discuss tasks you may find interesting in more detail. These are not the only tasks NLP can accomplish, but they are frequently of interest for Humanities scholars.
+![alt text](./data/images/huggingface.png)
 
 ### Search
 Search attempts to retrieve documents that are similar to a query. In order to do this, there must be some way to compute the similarity between documents. A search query can be thought of as a small input document, and the outputs could be a score of relevant documents stored in the corpus. While we may not be building a search engine, we will find that similarity metrics such as those used in search are important to understanding NLP.
@@ -31,3 +34,10 @@ Document summarization takes documents which are longer, and attempts to output 
 ### Text Prediction
 Text prediction attempts to predict future text inputs from a user based on previous text inputs. Predictive text is used in search engines and also on smartphones to help correct inputs and speed up the process of text input. It is also used in popular models such as ChatGPT.
 
+# Worked Example: Chatbot in Python
+We’ve got an overview of what different tasks we can accomplish. Now let’s try getting started with doing these tasks in Python. We won’t worry too much about how this model works for the time being, but will instead just focusing trying it out. We’ll start by running a chatbot, just like the one we used online.
+
+NLP tasks often need to be broken down into simpler subtasks to be executed in a particular order. These are called **pipelines** since the output from one subtask is used as the input to the next subtask. We will now define a “pipeline” in Python.
+
+01. Text Embeddings
+02. Word Embeddings
